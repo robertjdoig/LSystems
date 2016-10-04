@@ -13,7 +13,7 @@ PImage leafText;
 PImage drawText;
 
 void setup(){
-  size (800,800,P2D);
+  size (800,600,P2D);
   background(255);
   
   treeText = loadImage("Assets/treeTexture.png");
@@ -99,7 +99,7 @@ void colorChange(float _len){
   }
   else if( _len <= 20)  {
      
-    drawText = leafText;
-    //col = color(random(0,25),random(100,250),random(0,20)); //green
+    drawText = null;
+    col = color(random(0,25),random(100,250),random(0,20)); //green
   }
 }
